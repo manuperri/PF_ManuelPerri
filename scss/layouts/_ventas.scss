@@ -1,0 +1,78 @@
+main{
+  padding: $padding-main;
+}
+
+.hero {
+    display: flex;
+}
+
+.hero-content h2, .hero-content p {
+    color:$text-color;
+}
+
+.hero-content {
+    padding: $padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 30%;
+    height: 400px;
+    object-fit: cover;
+    padding: $padding;
+    box-shadow: $shadow-color;
+}
+
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+  
+  }
+  
+  .hero-img {
+    width: 80%;
+    position: relative;
+  }
+  
+  .hero-img img {
+    width: 100%;
+    height: 600px;
+    object-fit: contain;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .hero-img span {
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-color: $accent-color;
+    border-radius: $border-radius;
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+    z-index: 1;
+  }
+  
+  
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .hero-content a, .boton {
+    padding: $padding;
+    background-color: $primary-color;
+    color: $text-color;
+    border-radius: $border-radius;
+    text-decoration: none;
+    width: 150px;
+    text-align: center;
+  }
